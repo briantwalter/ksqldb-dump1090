@@ -1,13 +1,13 @@
 # ADS-B dump190 and ksqlDB
-(ksqlDB_1090.png)
+[diagram](./ksqlDB_1090.png)
 
 ## Prerequistes
-[Docker desktop](https://www.docker.com/products/docker-desktop)
-[kafkacat](https://github.com/edenhill/kafkacat) utility
-[netcat](https://brewinstall.org/install-netcat-on-mac-with-brew/) utility
-[RTL-SDR dongle or similar with simple antenna](https://www.rtl-sdr.com/buy-rtl-sdr-dvb-t-dongles/)
-[dump1090 cli tool](https://github.com/MalcolmRobb/dump1090) built and installed on local machine
-[BaseStation database](https://data.flightairmap.com/data/basestation/BaseStation.sqb.gz)
+* [Docker desktop](https://www.docker.com/products/docker-desktop)
+* [kafkacat](https://github.com/edenhill/kafkacat) utility
+* [netcat](https://brewinstall.org/install-netcat-on-mac-with-brew/) utility
+* [RTL-SDR dongle or similar with simple antenna](https://www.rtl-sdr.com/buy-rtl-sdr-dvb-t-dongles/)
+* [dump1090 cli tool](https://github.com/MalcolmRobb/dump1090) built and installed on local machine
+* [BaseStation database](https://data.flightairmap.com/data/basestation/BaseStation.sqb.gz)
 
 ## Files
 * `basestation.sqb` SQLite database file of known aircraft
