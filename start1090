@@ -1,0 +1,3 @@
+#!/bin/bash -x
+
+cd ../dump1090 && ./dump1090 --modeac --aggressive --net --interactive

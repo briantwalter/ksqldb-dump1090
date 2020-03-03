@@ -1,0 +1,10 @@
+#!/bin/bash -x
+
+WAIT=.1
+
+docker exec -it broker kafka-topics --bootstrap-server broker:9092 --delete --topic sbs1090_raw
+echo "Wait..." && sleep 3
+docker exec -it broker kafka-topics --bootstrap-server broker:9092 --create --topic sbs1090_raw --partitions 1 --replication-factor 1
+#/bin/bash -c "./slowcat ${WAIT} | kafkacat -b localhost:29092 -t sbs1090_raw -P -T"
+screen -dmS producer /bin/bash -c "./slowcat ${WAIT} | kafkacat -b localhost:29092 -t sbs1090_raw -P -T"
+kafkacat -b localhost:29092 -t sbs1090_raw -C

@@ -1,0 +1,6 @@
+#!/bin/bash -x
+
+docker-compose down && docker volume prune -f
+docker-compose up --build -d 
+echo "Wait.." && sleep 20
+docker exec -it ksqldb-cli ksql http://ksqldb-server:8088

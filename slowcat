@@ -1,0 +1,15 @@
+#!/bin/bash
+
+if [ "${1}" == "" ]; then
+ echo "ERR: need a time in seconds argument"
+ exit 1
+fi
+
+WAIT=${1}
+FILE=sbs_offline.csv
+
+for line in `cat ${FILE}` 
+do 
+  echo $line
+  sleep ${WAIT}
+done
