@@ -1,7 +1,7 @@
 # ADS-B dump190 and ksqlDB
-[diagram](./ksqlDB_1090.png)
+![diagram](./ksqlDB_1090.png)
 
-## Prerequistes
+## Prerequisites
 * [Docker desktop](https://www.docker.com/products/docker-desktop)
 * [kafkacat](https://github.com/edenhill/kafkacat) utility
 * [netcat](https://brewinstall.org/install-netcat-on-mac-with-brew/) utility
